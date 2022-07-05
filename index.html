@@ -121,18 +121,44 @@
 	// console.log(myCopyright);
 
 
-	if(myHour<12){//morning
-   		// alert("Good Morning!");
+	if(myHour >=5 && myHour < 12){
+
 		myGreeting = "Good Morning!";
 		myColor = "goldenrod";
-		myPic = "morning.jpg"
-	}else{//afternoon
-  	 	// alert("Good Afternoon!");
-		myGreeting = "Good Afternoon!;"
+		myPic = "morning.jpg";
+    
+	}else if(myHour >= 12 && myHour < 18){
+
+		myGreeting = "Good Afternoon!";
 		myColor = "lightblue";
-		myPic = "afternoon.jpg"
+		myPic = "afternoon.jpg";
+
+	}else if(myHour >= 18 && myHour < 23){
+
+		myGreeting = "Good Evening!";
+		myColor = "navyblue";
+		myPic = "evening.jpg";
+	
+	}else if(myHour >= 23){
+
+		myGreeting = "Good Night!";
+		myColor = "black";
+		myPic = "night.jpg";
 
 	}
+
+	// if(myHour>17){//morning
+   	// 	myGreeting = "Good Evening!";
+	// 	myColor = "navyblue";
+	// 	myPic = "evening.jpg"
+	// }
+  	 	
+	// if(myHour>20){//morning
+   	// 	myGreeting = "Good Night!";
+	// 	myColor = "black";
+	// 	myPic = "night.jpg"
+
+
 
 	// add images folder to myPic
 	myPic = "images/" + myPic; 
